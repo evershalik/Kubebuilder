@@ -24,10 +24,16 @@ import (
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
 // GuestbookSpec defines the desired state of Guestbook
+
+type TypeMetadata struct {
+	SomeText string `json:"someText,omitempty"`
+}
+
 type GuestbookSpec struct {
 	
 	Description string `json:"description,omitempty"`
 	FilePath string `json:"filepath,omitempty"`
+	Metadata TypeMetadata `json:"metadata,omitempty"`
 }
 
 // GuestbookStatus defines the observed state of Guestbook

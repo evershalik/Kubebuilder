@@ -1,0 +1,6 @@
+domain: github.com
+layout:
+- go.kubebuilder.io/v3
+projectName: guestbook
+repo: github.com/sha-lik/kubebuilder
+version: "3"

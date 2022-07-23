@@ -3,4 +3,10 @@ kind: Guestbook
 metadata:
   name: guestbook-sample
 spec:
+        description: Kind is a string value representing the REST resource this
+              object represents. Servers may infer this from the endpoint.
+        filepath: /tmp/myguestbook-v1.txt
+        metadata:
+                someText: some text
+
   # TODO(user): Add fields here

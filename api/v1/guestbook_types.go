@@ -35,7 +35,7 @@ type GuestbookStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 	// If file exist then it is true.
-	FileExists bool `json:"fileExists"`
+	FileExists bool `json:"fileExists,omitempty"`
 }
 
 //+kubebuilder:object:root=true
